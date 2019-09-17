@@ -2,6 +2,15 @@
 A tool for applying different markups to a given sequence of bits in order to retrieve numeric values. It can be used e.g. for  packing and unpacking numeric values into/from strings.
 The library functionality is similar to that of bit fields in C++, implemented with a different interface.
 
+#### Usage in an HTML document:
+```html
+<script type="text/javascript" src="bitsequencecore.min.js"></script>
+```
+#### Usage in a Node application:
+```javascript
+var BitSequenceCore = require('./bitsequencecore.min.js');
+```
+
 ## Brief description of the interface:
 
 #### Instantiating:
@@ -125,8 +134,8 @@ sequence.fromString("abc", 22, 16);
 and 6 bits (from the left side) from the second one.**/
 ```
 #### It's worth mentioning that in many cases (for e.g. in the case of functions atob() and btoa()) functions work only with 8-bit characters and produce strings with 8-bit characters and nonetheless characters of the JavaScript strings is 16-bit, only the 8 bits from the right side of each character in such cases should be taken into account i.e. added to the sequence.
-The third parameter can take any value 
-Excessive data of the array element or character is cut from the left side,
+The third parameter can take any value -- 
+excessive data of the array element or character is cut from the left side,
 insufficient data is completed with zeros from the left side and 
 then the defined number of bits is read.
 For examples, the following takes only first two (from the right) 
