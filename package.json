@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/BVADNCVAB-h/BitSequenceCore.git"
+    "url": "git+ssh://git@github.com/wwtchrsin/BitSequenceCore.git"
   },
   "keywords": [
     "bitfield"
@@ -24,7 +24,7 @@
   "author": "Vladislav Chursin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BVADNCVAB-h/BitSequenceCore/issues"
+    "url": "https://github.com/wwtchrsin/BitSequenceCore/issues"
   },
-  "homepage": "https://github.com/BVADNCVAB-h/BitSequenceCore#readme"
+  "homepage": "https://github.com/wwtchrsin/BitSequenceCore#readme"
 }
