@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "bitsequencecore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for applying different markups to a given sequence of bits in order to retrieve numeric values",
   "main": "./umd/bitsequencecore.min.js",
   "exports": {
