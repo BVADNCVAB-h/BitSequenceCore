@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "bitsequencecore",
+  "version": "1.0.0",
+  "description": "A tool for applying different markups to a given sequence of bits in order to retrieve numeric values",
+  "main": "./umd/bitsequencecore.min.js",
+  "exports": {
+    "./esm": "./esm/bitsequencecore.js"
+  },
+  "module": "./esm/bitsequencecore.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BVADNCVAB-h/BitSequenceCore.git"
+  },
+  "keywords": [
+    "bitfield"
+  ],
+  "author": "Vladislav Chursin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BVADNCVAB-h/BitSequenceCore/issues"
+  },
+  "homepage": "https://github.com/BVADNCVAB-h/BitSequenceCore#readme"
+}
