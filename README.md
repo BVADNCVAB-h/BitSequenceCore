@@ -6,9 +6,9 @@ The library functionality is similar to that of bit fields in C++, implemented w
 ## Node package name: bitsequencecore
 
 ## Source files
-./umd/bitsequencecore.js: HTML embedded script, CommonJS module
-./umd/bitsequencecore.min.js: HTML embedded script, CommonJS module (minified)
-./esm/bitsequencecore.js: ES module
+* ./umd/bitsequencecore.js: HTML embedded script, CommonJS module
+* ./umd/bitsequencecore.min.js: HTML embedded script, CommonJS module (minified)
+* ./esm/bitsequencecore.js: ES module
 
 ## Importing from the ES module
 ```javascript
