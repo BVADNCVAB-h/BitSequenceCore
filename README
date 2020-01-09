@@ -88,13 +88,13 @@ if ( env === 'browser' )
 if ( env === 'node' ) 
 { base64Str = Buffer.from(string, 'binary').toString('base64'); }
 console.log( 'input: '+base64Str ); //"input: WJjZA=="
-/**extracting numeric values from a base64 string:**/
+
+/*******(extracting numeric values from a base64 string:)**********/
 var binaryStr, sequence = new BitSequenceCore();
 if ( env === 'browser' ) 
 { binaryStr = atob(base64Str); //"abcd" }
 if ( env === 'node' ) 
 { binaryStr = Buffer.from(base64Str, 'base64').toString('binary'); }
-var sequence = new BitSequenceCore();
 sequence.fromString(binaryStr, binaryStr.length*8);
 var values = [], i = 0;
 var it = sequence.getIterator();
@@ -103,7 +103,8 @@ while ( it.hasNext() ) {
     if ( ++i == markup.length ) i = 0;
 }
 console.log( 'extracted: '+values ) //[ 97, 98, 99, 100 ];
-/**packing numeric values into a base64 string:**/
+
+/********(packing numeric values into a base64 string:)*********/
 var sequence2 = new BitSequenceCore();
 var it2 = sequence2.getIterator();
 for ( var j=0, i=0; j < values.length; j++ ) {
@@ -114,7 +115,7 @@ var base64Str2, binaryStr2 = sequence2.toString(); //"abcd"
 if ( env === 'browser' ) 
 { base64Str2 = btoa(binaryStr2); }
 if ( env === 'node' ) 
-{ base64Str2 = Buffer.from(binaryStr2, 'binary').toString('base64'); }
+{ base64Str2 = Buffer.from(binaryStr2,'binary').toString('base64'); }
 console.log( 'output: '+base64Str2 ); //"output: YWJjZA=="
 ```
 

@@ -14,7 +14,6 @@ if (env === 'node') {
 }
 function extractValues(binaryStr, markup) {
 	var binaryStr, sequence = new BitSequence();
-	var sequence = new BitSequence();
 	sequence.fromString(binaryStr, binaryStr.length*8);
 	var values = [], i = 0;
 	var it = sequence.getIterator();
@@ -55,7 +54,13 @@ var tests = [
 		markup: [7, 8, 1],
 	},
 ];
-
+println( '*********************************************************************' );
+println( '*********************************************************************' );
+println( 'this test extracts values using a defined markup from a base64 string' );
+println( 'then those value by using that markup are packed back into a string' );
+println( 'that is being encoded back into a base64 string' );
+println( '*********************************************************************' );
+println( '*********************************************************************' );
 for ( var i=0; i < tests.length; i++ ) {
 	println( 'test ' + (i+1) );
 	println( 'bytes: ' + tests[i].bytes.toString() );
